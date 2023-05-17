@@ -82,7 +82,7 @@ header .menu.ativado{
     text-align: center;
     align-items: center;
 }
-.nav_left > img {
+.nav_left >a> img {
     height: 60px;
     margin-right: 20px;
     text-align: center;
@@ -164,3 +164,54 @@ table {
     background-color: #ffffff;
     border-radius: 30px;
   }
+
+  /* footer !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+footer {
+    background-color: black;
+    padding: 20px;
+    color: var(--cor-branca);
+  }
+  
+  .footer-section img{
+    width:220px;
+    height: 170px;;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  .footer-section p{
+    color: var(--cor-fonte-text);
+  
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: var(--cor-fonte-text);
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--cor-fonte-text);
+  }
+  
