@@ -203,8 +203,9 @@ nav a:hover {
     height: 30%;
     border-radius: 50%;
     background-image: url(../img/logo_inclui+.png);
-    background-size: 100%;
+    background-size: 95%;
     background-repeat: no-repeat ;
+    
     
 }
 
@@ -226,7 +227,7 @@ nav a:hover {
     height: 30%;
     border-radius: 50%;
     background-image: url(../img/acordo-img-home.jpg);
-    background-size: 100%;
+    background-size: 120%;
     background-repeat: no-repeat ;
 }
 
