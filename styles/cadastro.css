@@ -12,7 +12,10 @@
 }
 
 body {
-    background-color: var(--cor-branca);
+    background-image: url(../img/img-login-cad.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -150px;
 }
 
 .login {
