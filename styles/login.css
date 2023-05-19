@@ -151,6 +151,7 @@ body {
     background-color: var(--cor-primaria);
     color: #fff;
     border: solid 1px #fff;
+    text-decoration: none;
 }
 
 .enviar:hover {
