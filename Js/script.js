@@ -1,17 +1,19 @@
 // barra de menu
-// function menuBars(){
-//     const ativarMenu = document.querySelector('.fa-bars');
-//     const navMenu = document.querySelector('header .menu');
+const btnMobile = document.getElementById('btn-mobile');
 
-//     ativarMenu.addEventListener('click', ()=>{
-//         ativarMenu.classList.toggle('fa-x');
-//         navMenu.classList.toggle('ativado');
-//     })
-// }
-// menuBars();
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active = nav.classList.contains('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
 
 // Buscar locais no mapa
-function buscarPontos(){
+function buscarPontos() {
     let dropwdown = document.getElementById('escolhas')
 
     let braile = (dropwdown.value == 'Deficiente Visual')
@@ -22,47 +24,34 @@ function buscarPontos(){
     mapImg.style.maxWidth = "80vw"
     mapImg.style.maxHeight = "60vh"
 
-    if (cadeira){
-        if(audicao){
-            if(braile){
+    if (cadeira) {
+        if (audicao) {
+            if (braile) {
                 //Cadeira Audicao Braile
                 mapImg.src = "../img/imgCadeiraAudicaoBraile.jpg"
-            }
-            else{
+            } else {
                 // Cadeira Audicao
                 mapImg.src = "../img/imgCadeiraAudicao.jpg"
             }
-        }
-        else if (braile)
-        {
+        } else if (braile) {
             // Cadeira Braile
             mapImg.src = "../img/imgCadeiraBraile.jpg"
-        }
-        else{
+        } else {
             // Cadeira
             mapImg.src = "../img/imgCadeira.jpg"
         }
-    }
-    else if (audicao)
-    {
-        if (braile)
-        {
+    } else if (audicao) {
+        if (braile) {
             // Audicao Braile
             mapImg.src = "../img/imgAudicaoBraile.jpg"
-        }
-        else
-        {
+        } else {
             // Audicao
             mapImg.src = "../img/imgAudicao.jpg"
         }
-    }
-    else if (braile)
-    {
+    } else if (braile) {
         // Braile
         mapImg.src = "../img/imgBraile.jpg"
-    }
-    else
-    {
+    } else {
         // Mapa solo
         mapImg.src = "../img/imgMapa.jpg"
     }

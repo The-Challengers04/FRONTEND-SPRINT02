@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,32 @@
     <link rel="shortcut icon" href="../img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/LGPD.css">
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navegação">
+            <nav id="nav">
+                <button id="btn-mobile"><span id="hamburger"></span></button>
+                <div class="nav_left layout">
+                    <a href="../pages/empresa.html" aria-label="Empresa">Empresa</a>
+                    <a href="../pages/map.html" aria-label="Viagem">Viagem</a>
+                    <a href="../pages/descontos.html" aria-label="Descontos">Descontos</a>
+                    <a href="../pages/sobre.html" aria-label="Sobre">Sobre</a>
+                </div>
+            </nav>
+            <a href="../index.html" class="logo"><img src="../img/logo_inclui+.png" alt="Logo do Site"></a>
             <div class="nav_left">
-                <a href="../index.html" target="_blank"><img src="../img/logo_inclui+.png" alt="Logo do Site"></a>
-                <a href="./pages/empresa.html" target="_blank">Empresa</a>
-                <a href="./pages/map.html" target="_blank">Viagem</a>
-                <a href="./pages/descontos.html" target="_blank">Descontos</a>
-                <a href="./pages/sobre.html" target="_blank">Sobre</a>
+                <a href="../pages/empresa.html" aria-label="Empresa">Empresa</a>
+                <a href="../pages/map.html" aria-label="Viagem">Viagem</a>
+                <a href="../pages/descontos.html" aria-label="Descontos">Descontos</a>
+                <a href="../pages/sobre.html" aria-label="Sobre">Sobre</a>
             </div>
             <div class="nav_right">
-                <button id="fazer_login" target="_blank">Fazer Login</button>
-                <button id="cadastrar" target="_blank">Cadastrar</button>
+                <a href="../pages/login.html"><button id="fazer_login"  aria-label="Fazer login">Login</button></a>
             </div>
         </nav>
     </header>
+
     <body>
         <div>
             <h1 class="titulo">LGPD</h1>
@@ -31,85 +42,74 @@
         <div class="conteudo">
             <div class="conteudo">
                 <h2>Política de Privacidade da Inclui+</h2>
-                <p>Esta Política de Privacidade descreve como a Inclui+ coleta, armazena, utiliza e protege as informações pessoais dos usuários 
-                    de nosso site. A fim de cumprir com as regulamentações da Lei Geral de Proteção de Dados (LGPD), implementamos medidas para 
-                    garantir a segurança e privacidade dos dados dos usuários. Leia atentamente esta política para entender como suas informações
-                    pessoais serão tratadas.
+                <p>Esta Política de Privacidade descreve como a Inclui+ coleta, armazena, utiliza e protege as informações pessoais dos usuários de nosso site. A fim de cumprir com as regulamentações da Lei Geral de Proteção de Dados (LGPD), implementamos
+                    medidas para garantir a segurança e privacidade dos dados dos usuários. Leia atentamente esta política para entender como suas informações pessoais serão tratadas.
                 </p>
             </div>
             <div class="conteudo">
                 <h2>Informações coletadas</h2>
-                <p>1.1 Dados de Cadastro: Ao criar uma conta em nosso site, solicitamos informações pessoais como nome, endereço de e-mail e senha.
-                    Esses dados são necessários para fornecer acesso e personalizar sua experiência em nossa plataforma.<br>
-                    1.2 Dados de Localização: Com a finalidade de oferecer recursos baseados em localização, como visualização de mapas, 
-                    podemos coletar informações de localização do seu dispositivo.
-                    
+                <p>1.1 Dados de Cadastro: Ao criar uma conta em nosso site, solicitamos informações pessoais como nome, endereço de e-mail e senha. Esses dados são necessários para fornecer acesso e personalizar sua experiência em nossa plataforma.<br> 1.2
+                    Dados de Localização: Com a finalidade de oferecer recursos baseados em localização, como visualização de mapas, podemos coletar informações de localização do seu dispositivo.
+
                 </p>
             </div>
             <div>
                 <h2>Uso das informações</h2>
-                <p>2.1 Personalização: Utilizamos suas informações de cadastro para personalizar sua experiência em nosso site, fornecer 
-                    serviços relevantes e adaptados às suas preferências.<br>
-                    2.2 Comunicações: Podemos utilizar seu endereço de e-mail para enviar comunicações relacionadas ao seu cadastro, como 
-                    confirmações, notificações sobre atividades e atualizações do site.<br>
-                    2.3 Melhoria do serviço: Os dados coletados podem ser utilizados para melhorar nossos serviços, identificando tendências
-                    de uso, avaliando a eficácia de recursos e realizando análises estatísticas.
-                    
+                <p>2.1 Personalização: Utilizamos suas informações de cadastro para personalizar sua experiência em nosso site, fornecer serviços relevantes e adaptados às suas preferências.<br> 2.2 Comunicações: Podemos utilizar seu endereço de e-mail para
+                    enviar comunicações relacionadas ao seu cadastro, como confirmações, notificações sobre atividades e atualizações do site.<br> 2.3 Melhoria do serviço: Os dados coletados podem ser utilizados para melhorar nossos serviços, identificando
+                    tendências de uso, avaliando a eficácia de recursos e realizando análises estatísticas.
+
                 </p>
             </div>
             <div>
                 <h2>Compartilhamento de informações</h2>
-                <p>3.1 Terceiros: Não compartilhamos suas informações pessoais com terceiros, a menos que seja necessário para cumprir com 
-                obrigações legais ou quando você fornecer consentimento explícito para fazê-lo.<br>
-                3.2 Segurança dos dados: Implementamos medidas técnicas e organizacionais para proteger suas informações contra acesso não
-                autorizado, alteração, divulgação ou destruição. No entanto, é importante ressaltar que nenhuma transmissão de dados pela
-                Internet é totalmente segura, e não podemos garantir a segurança absoluta de suas informações.
-                    
+                <p>3.1 Terceiros: Não compartilhamos suas informações pessoais com terceiros, a menos que seja necessário para cumprir com obrigações legais ou quando você fornecer consentimento explícito para fazê-lo.<br> 3.2 Segurança dos dados: Implementamos
+                    medidas técnicas e organizacionais para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, é importante ressaltar que nenhuma transmissão de dados pela Internet é totalmente segura,
+                    e não podemos garantir a segurança absoluta de suas informações.
+
                 </p>
             </div>
             <div>
                 <h2>Seus direitos</h2>
-                <p>4.1 Acesso e atualização: Você tem o direito de acessar e atualizar suas informações pessoais fornecidas durante o cadastro. 
-                Para fazer isso, acesse as configurações de sua conta.<br>
-                4.2 Exclusão: Caso deseje excluir sua conta e informações pessoais, entre em contato conosco e faremos o possível para atender 
-                ao seu pedido, desde que não haja obrigações legais ou razões legítimas para reter os dados.
-                    
+                <p>4.1 Acesso e atualização: Você tem o direito de acessar e atualizar suas informações pessoais fornecidas durante o cadastro. Para fazer isso, acesse as configurações de sua conta.<br> 4.2 Exclusão: Caso deseje excluir sua conta e informações
+                    pessoais, entre em contato conosco e faremos o possível para atender ao seu pedido, desde que não haja obrigações legais ou razões legítimas para reter os dados.
+
                 </p>
             </div>
             <div>
                 <h2>Alterações na Política de Privacidade</h2>
-                <p>Reservamos o direito de modificar esta Política de Privacidade a qualquer momento. Caso haja alterações significativas, 
-                informaremos os usuários por meio de notificações em nosso site ou por e-mail.
+                <p>Reservamos o direito de modificar esta Política de Privacidade a qualquer momento. Caso haja alterações significativas, informaremos os usuários por meio de notificações em nosso site ou por e-mail.
                 </p>
             </div>
         </div>
     </body>
     <footer>
         <div class="footer-content">
-          <div class="footer-section">
-            <img src="../img/logo_inclui+.png">
-          </div>
-          <div class="footer-section">
-            <h3>Navegação</h3>
-            <ul>
-                <li><a href="../index.html" target="_blank">Página inicial</a></li>
-                <li><a href="./empresa.html" target="_blank">Empresa</a></li>
-                <li><a href="./descontos.html" target="_blank">Descontos</a></li>
-                <li><a href="./map.html" target="_blank">Viagem</a></li>
-                <li><a href="./sobre.html" target="_blank">Sobre</a></li>
-                <li><a href="./LGPD.html" target="_blank">LGPD</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contato</h3>
-            <p>Email: exemplo@inclui+.com</p>
-            <p>Telefone: (99) 9999-9999</p>
-          </div>
+            <div class="footer-section">
+                <img src="../img/logo_inclui+.png">
+            </div>
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="../index.html" target="_blank">Página inicial</a></li>
+                    <li><a href="./empresa.html" target="_blank">Empresa</a></li>
+                    <li><a href="./descontos.html" target="_blank">Descontos</a></li>
+                    <li><a href="./map.html" target="_blank">Viagem</a></li>
+                    <li><a href="./sobre.html" target="_blank">Sobre</a></li>
+                    <li><a href="./LGPD.html" target="_blank">LGPD</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: exemplo@inclui+.com</p>
+                <p>Telefone: (99) 9999-9999</p>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>Todos os direitos reservados a Inclui+ &copy; - 2023</p>
         </div>
-      </footer>      
+    </footer>
     <script src="../Js/script.js"></script>
 </body>
+
 </html>
