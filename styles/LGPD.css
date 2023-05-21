@@ -21,36 +21,126 @@ body{
   overflow-x: hidden;
 }
 /* Nav !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-nav{
-height: 90px;
-display: flex;
-align-items: center;
-justify-content: space-around;
-padding: 10px 20px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 /* Conteudo nav esquerdo */
-.nav_left{
+
+#btn-mobile {
+  display: none;
+}
+
+.nav_left {
   display: flex;
   text-align: center;
   align-items: center;
 }
-.nav_left >a > img {
-  height: 60px;
-  margin-right: 20px;
-  text-align: center;
+
+#nav {
+  display: none;
 }
-.nav_left > a {
+
+.logo>img {
+  height: 60px;
+}
+
+.nav_left>a {
   font-size: 1.2em;
-  margin-left: 20px;
+  margin: 20px;
   color: var(--cor-fonte-text);
   text-decoration: none;
 }
+
 nav a:hover {
   color: #ccc;
 }
 /* Conteudo nav direito */
-#fazer_login{
+
+#fazer_login {
+  color: var(--cor-primaria);
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #55e5f6;
+  border-radius: 5px;
+}
+/* Responsividade barra de navegação */
+
+@media (max-width: 700px) {
+  #nav {
+      display: flex;
+  }
+  .nav_left {
+      display: none;
+  }
+  .layout {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background: white;
+      z-index: 1000;
+      visibility: hidden;
+  }
+  #nav.active .layout {
+      visibility: visible;
+      overflow-y: auto;
+      top: 70px;
+      border-radius: 5%;
+      width: 100%;
+      padding: 20px;
+      left: 0px;
+      transition: all 0.5s ease;
+  }
+  .layout>a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid var(--cor-primaria);
+      color: var(--cor-fonte-text);
+  }
+  /* Buttom mobile ativado */
+  #btn-mobile {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 1rem;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      gap: 0.5rem;
+  }
+  #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 6px;
+      transition: 0.3s;
+      position: relative;
+  }
+  #nav.active #hamburger {
+      border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+      transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -8px;
+  }
+}
+/* conteudo nav direito */
+
+#fazer_login {
   color: var(--cor-primaria);
   padding: 10px 20px;
   font-size: 1.1em;
@@ -60,17 +150,7 @@ nav a:hover {
   border: 2px solid #55E5F6;
   border-radius: 5px;
 }
-
-#cadastrar{
-  color: var(--cor-branca);
-  padding: 10px 20px;
-  font-size: 1.1em;
-  cursor: pointer;
-  margin-left: 20px;
-  background: var(--cor-primaria);
-  border: 2px solid #55E5F6;
-  border-radius: 5px;
-}
+/* Titulo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .titulo{
   color: var(--cor-primaria);
